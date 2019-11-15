@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>0</button>
+    <button>0</button>
+    <button>0</button>
+    <script>
+        // var obj = {};
+        // obj.a =10;
+        // console.log(odj.a);
+ //练习一
+    var aBtn  = document.getElementsByTagName("button");
+    var arr=["a","b","c","d"];
+    for(var i=0;i<aBtn.length;i++){
+        aBtn[i].j =0;
+        aBtn[i].onclick = function(){
+            this.innerHTML = arr[this.j];
+            this.j>=3 ? this.j=0:this.j++;
+        }
+    }
+//      for(var i=0;i<aBtn.length;i++){
+//        aBtn[i].onclick = function(){
+
+//            this.innerHTML++;
+//        }
+//    }
+   
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <input type="text" id="te">
+    <button id="btn">判断</button>
+     <script>
+         var oBtn = document.getElementById("btn");
+         var oTe = document.getElementById("te");
+         oBtn.onclick = function(){
+             if(parseFloat(oTe.value) == oTe.value){     //方法一
+                 //Number(oTe.value) == Number(oTe.value)  方法二
+                  alert("是数字");
+                  if(parseInt(oTe.value) == oTe.value){
+                    alert("是整数");
+                  }
+                  else{
+                    alert("不是整数");
+                  }
+             }else{
+                 alert("不是数字");
+             }
+         }
+     </script>
+</body>
+</html>

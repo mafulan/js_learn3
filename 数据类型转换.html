@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //字符串类型转换
+        var i =10;
+        alert((i+"")[0]);   //1
+        //+  隐形数据类型转换
+
+        //Number()数字类型转换
+        //parseInt()  parseFloat字符串转数字的强制类型转换
+        var i1 = "10111";
+        consol.log(parseInt(i1,2));   //23  二进制
+
+        //隐形转换 +(正号)  -(负号)   +  -  *  /  ++  --
+        var a=10;
+        var b ="10";
+        console.log(a+ +b);  //数字20    a+ 正b
+        console.log("100px" -1);  //NaN   
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <button id="btn1">增大</button>
+        <button id="btn2">减小</button>
+        <p id="p1">字体大小字体大小字体大小</p>
+        <script>
+            var iFont = 20;
+            var oP = document.getElementById("p1");
+            var oBtn1 = document.getElementById("btn1");
+            var oBtn2 = document.getElementById("btn2");
+            
+            oBtn1.onclick = function(){
+                if(iFont<28){
+                oP.style.fontSize = ++iFont +"px";
+             }
+            }
+            
+            oBtn2.onclick = function(){
+              if(iFont>12){
+                oP.style.fontSize = --iFont+ "px";
+             }
+            }
+         
+    
+    
+        </script>
+        
+</body>
+</html>

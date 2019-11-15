@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="te1">
+    <input type="text" id="te2">
+    <button id="btn">弹出</button>
+    <script>
+         var oT1 = document.getElementById("te1"); 
+         var oT2 = document.getElementById("te2");
+         var oBtn = document.getElementById("btn");
+         
+         oBtn.onclick = function(){
+             
+             if(oT1.value==""){
+                 alert("输入内容不能为空!");
+             }else if(oT2.value==""){
+                alert("输入内容不能为空!");
+             }else{
+             alert(oT1.value+"在"+oT2.value);
+             }
+          }
+       
+    //    oT1.value=="" ? laert("输入内容不能为空") : alert(oT1.value+"在"+oT2.value);  等价
+        //   alert(oT1.value=="" ? "输入内容不能为空" :oT1.value+"在"+oT2.value );  等价
+    </script>
+</body>
+</html>
